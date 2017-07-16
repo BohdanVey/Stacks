@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+#include <stack>
+using namespace std;
+int main()
+{
+stack<string> mystack; //Cтворення нового стеку
+ mystack.emplace("1"); //Вставити елемент на кінець 
+  mystack.emplace("2"); //Вставити елемент на кінець 
+  while(!mystack.empty()){//Перевірка чи пустий елемент
+  cout<<mystack.top();//Вивід 
+  mystack.pop();//Видалення верхнього елементу
+  }
+}
+/*
+!!!Звернути увагу спочатку вибиває 2 а потім 1
+*/
